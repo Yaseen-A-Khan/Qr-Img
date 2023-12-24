@@ -27,7 +27,7 @@ inquirer
     });
     fs.readFile("URL.txt","utf8", (err,data)=>{
       if(err) throw err;
-      console.log(`The contents of the file are: \n ${data}`);
+      console.log(`\nThe contents of the file are: \n ${data}`);
     });
 })
   .catch((error) => {
