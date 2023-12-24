@@ -1,1 +1,1 @@
-Generates Qr-img for the website link.
+# Generates Qr-img for the website link.
