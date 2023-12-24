@@ -1,0 +1,12 @@
+{
+  "name": "qr",
+  "version": "1.0.0",
+  "description": "qr-img png",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yaseen",
+  "license": "ISC"
+}
