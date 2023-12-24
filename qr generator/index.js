@@ -13,6 +13,10 @@ inquirer
       message: "Enter the site name: ",
       name: "site",
     },
+    {
+      message: "do you want to see the contents of the file? y/n",
+      name: "choice",
+    },
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
@@ -25,10 +29,13 @@ inquirer
       if(err) throw err;
       console.log("the file has been saved!");
     });
+    const choice = answers.choice;
+    if( choice === "y"){
     fs.readFile("URL.txt","utf8", (err,data)=>{
       if(err) throw err;
-      console.log(`\nThe contents of the file are: \n ${data}`);
+      console.log(`The contents of the file are: \n ${data}`);
     });
+  }
 })
   .catch((error) => {
     if (error.isTtyError) {
